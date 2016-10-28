@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  padding: inherit;
+}
+
+#amazon-search {
+  /*padding: 5px 0px 10px 0px;*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  text-align: center;
+}
+
+
+#amazon-calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+#amazon-calculator div {
+  padding: 10px;
+}
