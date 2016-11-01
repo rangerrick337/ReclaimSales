@@ -11,14 +11,22 @@ body {
 }
 
 #main {
-  width: 50%;
+  width: 40%;
   height: 50%;
   background-color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 20px;
+  font-family: "PT Serif", Times, serif;
+  text-align: center;
+}
+
+.btn {
+  font-family: "PT Serif", Times, serif;
+}
+
+.btn-success {
+  background-color: lightskyblue;
 }
 
 #title {
@@ -29,19 +37,21 @@ body {
 }
 
 #amazon-search {
-  /*padding: 5px 0px 10px 0px;*/
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
   text-align: center;
   background-color: lightgreen;
   padding: inherit;
+  border-radius: 20px;
 }
 
 #why {
   padding: inherit;
-  background-color: pink;
+  background-color: lightpink;
 }
+
+#why li {
+  text-align: left;
+}
+
 #amazon-calculator-container {
   display: flex;
   flex-direction: column;
@@ -50,24 +60,48 @@ body {
   background-color: lightyellow;
 }
 
-#amazon-calculator div {
-  padding: inherit;
-  margin-top: 20px;
+#amazon-calculator {
+  padding: 30px;
+  padding-bottom: 10px;
+  background-color: lightcyan;
+  border-radius: 20px;
+}
+
+.form-horizontal div {
+  /*padding: inherit;*/
   display: flex;
   flex-direction: row;
-  align-content: center;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-#amazon-calculator div label {
-  display: flex;
-  align-items: center;
+.form-horizontal div label {
   white-space: nowrap;
   margin-right: auto;
   padding-right: 20px;
 }
 
-#amazon-calculator div input {
+.form-horizontal input, .form-horizontal p, .form-horizontal h4 {
   width: 100px;
   margin-left: auto;
+  margin-bottom: 5px;
+}
+
+#contact {
+  text-align: center;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icons i {
+  font-size: 40px;
+  margin: 10px;
 }

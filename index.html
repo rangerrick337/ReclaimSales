@@ -6,7 +6,7 @@
     <title>Reclaim Sales</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
     <script src="js/jquery-3.1.1.slim.js"></script>
     <script src="js/index.js"></script>
 
@@ -14,14 +14,10 @@
 
 <body>
   <section id="main">
+    <h1>Reclaim Your Brand's Sales on Amazon</h1>
     <section id="title">
-      <h1>Reclaim Your Brand's Sales on Amazon</h1>
-      <h3>Is your brand already on Amazon?</h3>
-      <p>
-        Many brands are already on Amazon and don't even know it. Wholesalers
-        often list products on Amazon as an extra channel for sales.
-      </p>
 
+      <h3>Are other companies listing your products?</h3>
 
     <form class="form-inline" method="get" id="amazon-search">
       <p>
@@ -32,32 +28,21 @@
          <input type="text" class="form-control" id="search" placeholder="your brand name">
       </div>
     </form>
-</section>
-    <section id="why">
-      <h3>Why Your Brand Should Be Selling Directly On Amazon?</h3>
-      <ul>
-        <li><b>Control your brand's experience from creation to customer</b></li>
-        <ul>
-          <li>price</li>
-          <li>images</li>
-          <li>descriptions</li>
-          <li>customer interactions</li>
-          <li>shipping</li>
-        </ul>
-        <li><b>Maximize profit</b></li>
-        <ul>
-          <li>cut out unnecessary middle men</li>
-          <li>let Amazon work for you</li>
-        </ul>
-        <li></li>
-      </ul>
+
+    <p>
+      <br>
+      Many brands are already on Amazon and don't even know it. Check the sellers
+      to see which of your wholesalers have listed your products.
+    </p>
+
     </section>
     <section id="amazon-calculator-container">
       <h2>
-        Let's have a look at how big of an impact selling direct on Amazon
-        will have on your Brand and your revenue.
+        How big of an impact will selling direct on Amazon
+        have on your bottom line?
       </h2>
-      <h4>Choose a <u><b>single product</b></u> in your catalogue and fill out the form</h4>
+      <h3><b>Good question.</b></h3>
+      <h4>Choose a <b>single product</b> in your catalogue and fill out the form:</h4>
       <form class="form-horizontal" method="get" id="amazon-calculator">
         <div class="form-group">
           <label for="retail-price">Retail Price:</label>
@@ -75,7 +60,71 @@
           <label for="amazon-sales">Estimated Amazon Sales:</label>
           <input type="number" class="form-control" id="amazon-sales" placeholder=0>
         </div>
+        <div class="form-group" id="calculate-button">
+          <!-- button inserted via JS -->
+        </div>
       </form>
+      <form class="form-horizontal" method="get" id="calculator-results">
+        <hr>
+        <div class="form-group">
+          <label for="ppu-current">Current Profit / Unit Sold on Amazon:</label>
+          <p class="form-control-static" id="ppu-current"></p>
+        </div>
+        <div class="form-group">
+          <label for="ppu-projected">Future Profit / Unit Sold on Amazon:</label>
+          <p class="form-control-static" id="ppu-projected"></p>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label for="revenue-current">Current Annual Revenue on Amazon:</label>
+          <p class="form-control-static" id="revenue-current"></p>
+        </div>
+        <div class="form-group">
+          <label for="revenue-projected">Future Annual Revenue on Amazon:</label>
+          <p class="form-control-static" id="revenue-projected"></p>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label for="increased-revenue"><u>Increased Revenue Per Year:</u></label>
+          <p class="form-control-static" id="increased-revenue"></p>
+        </div>
+      </form>
+      </form>
+    </section>
+    <section id="why">
+      <h3>Why Else Your Brand Should Be Selling Directly On Amazon?</h3>
+      <ul>
+        <li><b>Control your brand's experience from creation to customer</b></li>
+        <ul>
+          <li>price</li>
+          <li>images</li>
+          <li>descriptions</li>
+          <li>customer interactions</li>
+          <li>shipping</li>
+        </ul>
+        <br>
+        <li><b>Reach Untapped Amazon Marketplaces</b></li>
+        <ul>
+          <li>Canada</li>
+          <li>China</li>
+          <li>United Kingdom</li>
+          <li>Germany</li>
+          <li>France</li>
+          <li>Italy</li>
+          <li>Spain</li>
+          <li>India</li>
+          <li>Mexico</li>
+          <li>Japan</li>
+        </ul>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Need Help Getting Started?</h2>
+      <section id="icons">
+        <a href="mailto:leerick@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/rick-lee"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/TheBoxesofLife"><i class="fa fa-twitter fa-1" aria-hidden="true"></i></a>
+      </section>
     </section>
   </section>
 
