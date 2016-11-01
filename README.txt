@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/RickLee/pen/qaPdww.
-
- 
+This site helps brands calculate how much revenue they lose by letting wholesalers sell on Amazon vs selling on Amazon directly.
