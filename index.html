@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <title>Reclaim Sales</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <script src="js/jquery-3.1.1.slim.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://use.fontawesome.com/52118f61a0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
     <script src="js/index.js"></script>
 
   </head>
@@ -39,10 +42,11 @@
     <section id="amazon-calculator-container">
       <h2>
         How big of an impact will selling direct on Amazon
-        have on your bottom line?
+        have?
       </h2>
       <h3><b>Good question.</b></h3>
       <h4>Choose a <b>single product</b> in your catalogue and fill out the form:</h4>
+      <hr>
       <form class="form-horizontal" method="get" id="amazon-calculator">
         <div class="form-group">
           <label for="retail-price">Retail Price:</label>
@@ -57,7 +61,7 @@
           <input type="number" class="form-control" id="mfg-cost" placeholder=0>
         </div>
         <div class="form-group">
-          <label for="amazon-sales">Estimated Amazon Sales:</label>
+          <label for="amazon-sales">Estimated Units Sold Per Year:</label>
           <input type="number" class="form-control" id="amazon-sales" placeholder=0>
         </div>
         <div class="form-group" id="calculate-button">
@@ -74,6 +78,10 @@
           <label for="ppu-projected">Future Profit / Unit Sold on Amazon:</label>
           <p class="form-control-static" id="ppu-projected"></p>
         </div>
+        <div class="form-group">
+          <label for="percent-increased">Percent Increase:</label>
+          <p class="form-control-static" id="percent-increased"></p>
+        </div>
         <hr>
         <div class="form-group">
           <label for="revenue-current">Current Annual Revenue on Amazon:</label>
@@ -84,7 +92,7 @@
           <p class="form-control-static" id="revenue-projected"></p>
         </div>
         <hr>
-        <div class="form-group">
+        <div class="form-group" id="increased-revenue-container">
           <label for="increased-revenue"><u>Increased Revenue Per Year:</u></label>
           <p class="form-control-static" id="increased-revenue"></p>
         </div>
@@ -92,8 +100,9 @@
       </form>
     </section>
     <section id="why">
-      <h3>Why Else Your Brand Should Be Selling Directly On Amazon?</h3>
+      <h2>Why Else Your Brand Should Be Selling Directly On Amazon?</h2>
       <ul>
+        <br>
         <li><b>Control your brand's experience from creation to customer</b></li>
         <ul>
           <li>price</li>

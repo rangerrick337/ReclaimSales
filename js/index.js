@@ -56,6 +56,14 @@ $(document).ready(function() {
     var projectedProfitPerElement = document.getElementById("ppu-projected");
     projectedProfitPerElement.innerHTML = "<b>" + projectedProfitPerUnitFixed;
 
+  // Calculate Percent Increase in Revenue
+    var percentIncrease = 100 * ((projectedProfitPerUnit/currentProfitPerUnit) - 1);
+    // round the percentage
+    var percentIncreaseFixed = Math.floor(percentIncrease);
+    // insert
+    var percentIncreaseElement = document.getElementById("percent-increased");
+    percentIncreaseElement.innerHTML = "% " + percentIncreaseFixed;
+
   // Calculate Current Revenue Estimate from Amazon Sales
     var currentRevenue = currentProfitPerUnit * amazonSales;
     // get local currency and format number
